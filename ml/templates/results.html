@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sonuç</title>
+	<style>
+		*{
+			margin:0;
+			padding:0;
+		}
+		.title{
+			width:100%;
+			
+			text-align:center;
+			padding-top:50px;
+			padding-bottom:50px;
+		}
+		.ml-container{
+			width: 100%;
+		
+			text-align: center;
+		}
+		.ml-title{
+			padding-top:15px;
+			padding-bottom:15px;
+			text-align: center;
+		}
+		#text{
+			margin-top:25px;
+			margin-bottom:25px;
+		}
+		.btn{
+			width:250px;
+			height: 35px;
+			outline: none;
+			border: 0;
+			background-color:darkslategray;
+			color:white;
+		}
+	</style>
+</head>
+<body>
+
+	<header>
+		<div class="container">
+			<div class="title">
+				<h2>ML TAHMİN PROGRAMI</h2>
+			</div>
+		</div>
+	</header>
+
+	<div class="ml-container">
+		{% if prediction == 1%}
+		<h2 style="color:blue;">İyi Yorum</h2>
+		{% elif prediction == 0%}
+		<h2 style="color:red;">Kötü Yorum </h2>
+		{% endif %}
+	</div>
+
+</body>
+</html>
